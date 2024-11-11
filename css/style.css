@@ -1,0 +1,228 @@
+body {
+    font-family: 'Space Mono', monospace;
+    width: 100%;
+    background-color: var(--Light-grayish-cyan);
+    margin: 0;
+}
+
+.content {
+    height: 100vh;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.content .title {
+    padding-bottom: 50px;
+    text-transform: uppercase;
+    color: var(--Dark-grayish-cyan);
+    letter-spacing: 10px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.content .title span {
+    display: flex;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 30px;
+    background-color: var(--White);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.options {
+    padding: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+.options .bill {
+    position: relative;
+}
+
+.options .bill img {
+    position: absolute;
+    top: 66%;
+    left: 5%;
+    transform: translateY(-40%);
+}
+
+.options .bill h2 {
+    padding-bottom: 5px;
+    color: var(--Dark-grayish-cyan);
+    font-size: var(--Input-font-size);
+}
+
+.options input {
+    width: 90%;
+    color: var(--Light-grayish-cyan);
+    font-size: var(--Input-font-size);
+    font-family: 'Space Mono', monospace;
+}
+
+.options .bill input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Ver-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-size: var(--Input-font-size);
+    text-align: right;
+}
+
+.options .tip-selector {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 20px;
+}
+
+.options .tip-selector h2 {
+    padding-bottom: 5px;
+    color: var(--Dark-grayish-cyan);
+    font-size: var(--Input-font-size);
+}
+
+.options .tip-selector .tips {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px;
+    max-width: 90%;
+}
+
+.options .tip-selector .tips button {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Very-dark-cyan);
+    color: var(--White);
+    font-family: 'Space Mono', monospace;
+    font-size: var(--Input-font-size);
+    text-align: center;
+    cursor: pointer;
+}
+
+.options .tip-selector .tips button:hover {
+    background-color: var(--Strong-cyan);
+}
+
+.options .tip-selector .tips .custom {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Ver-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: var(--Input-font-size);
+    text-align: center;
+}
+
+.options .people {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    gap: 5px;
+    padding-top: 20px;
+}
+
+.options .people h2 {
+    padding-bottom: 5px;
+    color: var(--Dark-grayish-cyan);
+    font-size: var(--Input-font-size);
+}
+
+.options .people input {    
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Ver-light-grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: var(--Input-font-size);
+    text-align: right;
+}
+
+.options .people img {
+    position: absolute;
+    top: 66%;
+    left: 5%;
+    transform: translateY(20%);
+}
+
+/* RESULTS */
+
+.results {
+    background-color: var(--Very-dark-cyan);
+    padding: 30px 20px;
+    color: var(--White);
+    border-radius: 15px;
+    min-width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.results h2 {
+    font-size: var(--Input-font-size);
+}
+
+.result-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.result-item:first-child {
+    padding-top: 20px;
+}
+
+.result-item .label {
+    display: flex;
+    flex-direction: column;
+}
+
+.result-item h3 {
+    font-size: var(--Input-font-size);
+    font-weight: 700;
+}
+
+.result-item p {
+    font-size: var(--Input-font-size);
+    color: var(--Grayish-cyan);
+}
+
+.result-item .amount {
+    font-size: 50px;
+    color: var(--Strong-cyan);
+    line-height: 45px;
+}
+
+.results .reset {
+    margin-top: 90px;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--Grayish-cyan);
+    color: var(--Very-dark-cyan);
+    font-family: 'Space Mono', monospace;
+    font-size: var(--Input-font-size);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+.results .reset:hover {
+    background-color: var(--Strong-cyan);
+}

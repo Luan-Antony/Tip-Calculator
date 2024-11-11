@@ -12,7 +12,9 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
 
   <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/variaveis.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/responsive.css">
 
   <title>Frontend Mentor | Tip calculator app</title>
 
@@ -20,14 +22,15 @@
 
 <body>
   <main class="content">
-    <h1 class="title">Splitter</h1>
+    <h1 class="title">Spli<span>tter</span></h1>
 
     <section class="container">
       <div class="options">
 
         <div class="bill">
           <h2>Bill</h2>
-          <input type="number" placeholder="0">
+          <img src="./src/images/icon-dollar.svg" alt="">
+          <input type="text" placeholder="0">
         </div>
 
         <div class="tip-selector">
@@ -39,37 +42,38 @@
             <button>15%</button>
             <button>25%</button>
             <button>50%</button>
-            <input type="number" placeholder="Custom">
+            <input class="custom" type="text" placeholder="Custom">
           </div>
         </div>
 
         <div class="people">
           <h2>Number of People</h2>
-
-          <input type="number" placeholder="0">
+          <img src="./src/images/icon-person.svg" alt="">
+          <input type="text" placeholder="0">
         </div>
       </div>
 
       <div class="results">
-
-        <div class="tip">
-          <div class="value">
-            <h2>Tip Amount</h2>
+        
+        <div class="result-item">
+          <div class="label">
+            <h3>Tip amount</h3>
             <p>/ person</p>
           </div>
-          <h3>$0.00</h3>
+          <p class="amount">$0.00</p>
         </div>
-
-        <div class="total">
-          <div class="value">
-            <h2>Total</h2>
+      
+        <div class="result-item">
+          <div class="label">
+            <h3>Total</h3>
             <p>/ person</p>
           </div>
-          <h3>$0.00</h3>
+          <p class="amount">$0.00</p>
         </div>
-
-        <button>Reset</button>
+      
+        <button class="reset">Reset</button>
       </div>
+      
     </section>
   </main>
 </body>
