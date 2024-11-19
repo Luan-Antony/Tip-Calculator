@@ -66,19 +66,29 @@ body {
 
 .options input {
     width: 90%;
-    color: var(--Light-grayish-cyan);
-    font-size: var(--Input-font-size);
     font-family: 'Space Mono', monospace;
 }
 
-.options .bill input {
+.options .campo input:focus {
+    border: 2px solid var(--Strong-cyan);
+}
+
+.options .bill .campo {
     padding: 10px;
     border-radius: 5px;
-    border: none;
     background-color: var(--Ver-light-grayish-cyan);
     color: var(--Very-dark-cyan);
     font-size: var(--Input-font-size);
     text-align: right;
+}
+
+.options .bill .campo,
+.options .people .campo {
+    border: 2px solid var(--Ver-light-grayish-cyan);
+}
+
+.invalido {
+    border-color: var(--Error) !important;
 }
 
 .options .tip-selector {
@@ -118,6 +128,10 @@ body {
     background-color: var(--Strong-cyan);
 }
 
+.options .tip-selector .tips button.selected {
+    background-color: var(--Strong-cyan);
+}
+
 .options .tip-selector .tips .custom {
     padding: 10px;
     border-radius: 5px;
@@ -137,18 +151,40 @@ body {
     padding-top: 20px;
 }
 
+.options .people .label,
+.options .bill .label {
+    display: flex;
+}
+
 .options .people h2 {
     padding-bottom: 5px;
     color: var(--Dark-grayish-cyan);
     font-size: var(--Input-font-size);
 }
 
+input:focus {
+    outline: 2px solid var(--Strong-cyan);
+}
+
+.options .people span,
+.options .bill span {
+    font-size: 12px;
+    margin-left: 45px;
+    line-height: 27px;
+    display: none;
+    color: var(--Error);
+}
+
+.options .bill span {
+    margin-left: 160px;
+}
+
 .options .people input {    
     padding: 10px;
     border-radius: 5px;
     border: none;
-    background-color: var(--Ver-light-grayish-cyan);
     color: var(--Very-dark-cyan);
+    background-color: var(--Ver-light-grayish-cyan);
     font-family: 'Space Mono', monospace;
     font-size: var(--Input-font-size);
     text-align: right;
@@ -210,7 +246,7 @@ body {
     line-height: 45px;
 }
 
-.results .reset {
+.results .btn-reset {
     margin-top: 90px;
     padding: 10px;
     border-radius: 5px;
@@ -223,6 +259,6 @@ body {
     cursor: pointer;
 }
 
-.results .reset:hover {
+.results .btn-reset:hover {
     background-color: var(--Strong-cyan);
 }

@@ -28,9 +28,12 @@
       <div class="options">
 
         <div class="bill">
-          <h2>Bill</h2>
-          <img src="./src/images/icon-dollar.svg" alt="">
-          <input type="text" placeholder="0">
+          <div class="label">
+            <h2>Bill</h2>
+            <span class="error">required field</span>
+          </div>
+          <img src="./src/images/icon-dollar.svg" alt="icone de dolár">
+          <input type="text" placeholder="0" class="campo" id="bill"">
         </div>
 
         <div class="tip-selector">
@@ -47,9 +50,12 @@
         </div>
 
         <div class="people">
-          <h2>Number of People</h2>
-          <img src="./src/images/icon-person.svg" alt="">
-          <input type="text" placeholder="0">
+          <div class="label">
+            <h2>Number of People</h2>
+            <span class="error">can't be zero</span>
+          </div>
+          <img src="./src/images/icon-person.svg" alt="icone de pessoa">
+          <input id="campoInput" type="text" placeholder="0" class="campo" id="people">
         </div>
       </div>
 
@@ -60,7 +66,7 @@
             <h3>Tip amount</h3>
             <p>/ person</p>
           </div>
-          <p class="amount">$0.00</p>
+          <p class="amount" id="tipAmountDisplay">$0.00</p>
         </div>
       
         <div class="result-item">
@@ -68,14 +74,16 @@
             <h3>Total</h3>
             <p>/ person</p>
           </div>
-          <p class="amount">$0.00</p>
+          <p class="amount" id="totalDisplay">$0.00</p>
         </div>
       
-        <button class="reset">Reset</button>
+        <button type="button" class="btn-reset">Reset</button>
       </div>
       
     </section>
   </main>
+
+  <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
